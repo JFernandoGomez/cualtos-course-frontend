@@ -36,6 +36,8 @@ const App = () => {
       )
   },[])
 
+  console.log(movies);
+
   return (
     <div>
       <Title name={title} />
