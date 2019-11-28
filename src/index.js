@@ -4,7 +4,7 @@ import Title from './Title';
 import './style.scss';
 
 const App = () => {
-  let [title, setTitle] = useState('Mflix');
+  let [title, setTitle] = useState('YOUR_NAME');
   let [movies, setMovies] = useState([]);
   /*
     Connect the component and consume the API
@@ -39,7 +39,7 @@ const App = () => {
   console.log(movies);
 
   return (
-    <div>
+    <React.Fragment>
       <Title name={title} />
       {/* 
         ----- create a component that displays the movies 
@@ -49,7 +49,7 @@ const App = () => {
         year
         imdb info
       */}
-    </div>
+    </React.Fragment>
   );
 }
 

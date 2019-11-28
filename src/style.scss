@@ -1,11 +1,23 @@
 @import './styles/theme';
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
 
 body, html {
-  height: 100%;
   width: 100%;
   background: $dark-background;
   color: $dark-font;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
-h1, p {
-  font-family: Lato;
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }

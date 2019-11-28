@@ -1,0 +1,42 @@
+@import "./theme";
+
+.header {
+  display: flex;
+  align-items: center;
+  color: $dark-font;
+  margin: 15px 5%;
+
+  .menu--icon {
+    height: 40px;
+    width: 40px;
+    align-self: flex-start;
+    padding: 0 20px 0;
+  }
+
+  .title {
+    &--wrapper {
+      flex: 1 0 auto;
+    }
+
+    &--text {
+      color: $red;
+      font-family: "Lato", sans-serif;
+      margin: 0px;
+    }
+
+    &--name {
+      font-size: 0.7rem;
+      font-weight: bold;
+      color: rgba($dark-font,0.7);
+    }
+  }
+  
+  .actions {
+    &--wrapper {
+      flex: 0 0 220px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
