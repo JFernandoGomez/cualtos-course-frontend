@@ -2,8 +2,49 @@
 
 .movie-list {
     &--wrapper {
-        // display: flex;
+        display: flex;
         width: 100%;
         overflow: auto;
+    }
+    
+    &--item {
+        width: 300px;
+    }
+
+    &--info {
+        padding: 10px;
+    }
+
+    &--img {
+        width: 200px;
+        height: 300px;
+        margin: 0 2px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    &--rating {
+        margin: 5px 0;
+        span {
+            display: inline-block;
+            background-color: $blue;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+    }
+
+    &--languages {
+        color: $red;
+        font-size: 0.8em;
+    }
+
+    &--genres {
+        font-size: 0.8em;
     }
 }
