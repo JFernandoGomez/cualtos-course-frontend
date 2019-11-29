@@ -1,0 +1,9 @@
+@import "./theme";
+
+.movie-list {
+    &--wrapper {
+        // display: flex;
+        width: 100%;
+        overflow: auto;
+    }
+}

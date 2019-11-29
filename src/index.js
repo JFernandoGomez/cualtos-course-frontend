@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { render } from 'react-dom';
 import Title from './Title';
+import MovieList from './MovieList';
 import './style.scss';
 
 const App = () => {
@@ -49,6 +50,7 @@ const App = () => {
         year
         imdb info
       */}
+      <MovieList movies={movies}></MovieList>
     </React.Fragment>
   );
 }
