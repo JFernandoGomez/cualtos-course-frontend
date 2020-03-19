@@ -21,6 +21,7 @@ const App = () => {
           return response.json();
         } else {
           throw new Error('Something went wrong on api server!');
+          setMovies(movie_mocks);
         }
       })
       .then(
@@ -37,7 +38,7 @@ const App = () => {
       )
   },[])
 
-  console.log(movies);
+  console.log('movies', JSON.stringify(movies));
 
   return (
     <React.Fragment>
