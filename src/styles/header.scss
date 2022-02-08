@@ -1,14 +1,12 @@
-@import "./theme";
+@import './theme';
 
 .header {
   display: flex;
   align-items: center;
   color: $dark-font;
-  margin: 15px 5%;
+  margin: 15px 5% 15px 0;
 
   .menu--icon {
-    height: 40px;
-    width: 40px;
     align-self: flex-start;
     padding: 0 20px 0;
   }
@@ -20,17 +18,17 @@
 
     &--text {
       color: $red;
-      font-family: "Lato", sans-serif;
+      font-family: 'Lato', sans-serif;
       margin: 0px;
     }
 
     &--name {
       font-size: 0.7rem;
       font-weight: bold;
-      color: rgba($dark-font,0.7);
+      color: rgba($dark-font, 0.7);
     }
   }
-  
+
   .actions {
     &--wrapper {
       flex: 0 0 220px;
